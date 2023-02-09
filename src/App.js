@@ -12,13 +12,11 @@ const points = [];
 points.push(new THREE.Vector3(- 10, 0, 0));
 points.push(new THREE.Vector3(0, 10, 0));
 points.push(new THREE.Vector3(10, 0, 0));
-// const cube = new THREE.Mesh(geometry, matrial);
 const geometry = new THREE.BufferGeometry().setFromPoints(points);
 const line = new THREE.Line(geometry, material);
 
 scene.add(line);
 
-// camera.position.z = 5;
 camera.position.set(0, 0, 100);
 camera.lookAt(0, 0, 0);
 
